@@ -29,7 +29,7 @@ body {
 }
 
 .slide {
-  max-height: 100vh;
+  max-height: 80vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ body {
 }
 
 .slide h2 {
-  font-size: 2.5rem;
+  
   margin-bottom: 0.5rem;
 }
 
@@ -120,5 +120,18 @@ a{
 @media screen and (max-width: 600px) {
   div.footer {
     font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .slide{
+    margin-top: 2rem;
+  }
+}
+
+
+@media (min-width: 605px) {
+  h2 {
+      font-size: 2.5rem;
   }
 }
