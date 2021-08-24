@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import smtplib
+import os
 
-my_email = "iwanttosharemylocation@gmail.com"
-password = "L0kac1ja!2021"
+my_email = f"{os.environ['SEND_FROM_EMAIL']}"
+password = f"{os.environ['SEND_FROM_EMAIL_PASSWORD']}"
 
 app = Flask(__name__)
-app.secret_key = "asd3121ead5851365$#1e" # !! // TODO IMPORTANT before depl. change this in to  environment variable!
+app.secret_key = f"{os.environ['APP_FLASK_KEY']}"
 
 @app.route("/", methods=["GET", "POST"])
 def location():
