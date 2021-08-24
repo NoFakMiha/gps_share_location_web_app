@@ -1,0 +1,18 @@
+.first-card{
+    background-image: url("/static/img/background_tablet_with_people._without_clouds.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border: none;
+    
+}
+
+.card-body{
+    padding-top: 15rem;
+}
+
+.writen{
+    color: black;
+    
+}

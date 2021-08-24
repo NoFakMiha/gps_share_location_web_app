@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="{{ url_for('static', filename='js/java.js') }}" type="module"></script>
+
+  <title>Share your location</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style2.css') }}">
+   <!-- font awsome code-->
+   <script src="https://kit.fontawesome.com/209182c71c.js" crossorigin="anonymous"></script>
+
+
+
+  <meta name="description" content="share your location">
+  <meta property="og:image:alt" content="Image description">
+  <meta property="og:locale" content="en_GB">
+
+
+  <link rel="icon" href="static/img/favicon.ico">
+ 
+</head>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">EN</a>
+      
+      <a class="navbar-brand" href="#">DE</a>
+      <a class="navbar-brand" href="#">SI</a>
+      <a class="navbar-brand" href="#">CZ</a>
+      <a class="navbar-brand" href="#">HR</a>
+      </div>
+    </div>
+  </nav>
+ <div class="slider-container">
+     <div class="slide">
+         <h2>You want to share your location <i class="fas fa-map-marker-alt"></i></h2>
+         <h4>Let i help you with technology to save your day...</h4>
+         <h4 class="swipe"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i> SWIPE  <i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></h4>
+         <img src="static/img/image1.png" alt=""/>
+         
+     </div>
+     <div class="slide">
+        <h2 >Your GPS cordinates are:</h2>
+        <h4 id='location_paragraf' class="location">GPS</h4>
+        <img src="static/img/background_tablet_with_people._without_clouds.png" alt="" />
+
+        <form id="pass_gps" action="/login" method="post">
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Your name" aria-label="Username" aria-describedby="addon-wrapping" name="username">
+              </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="email" class="form-control" placeholder="Send to..." aria-label="Username" aria-describedby="addon-wrapping" name="email">
+              </div>
+            <input type="submit" value="Send my location!" class="btn">
+          </form>
+
+    </div>
+ </div>
+
+
+
+
+ <div class="footer">
+  <a href="https://github.com/NoFakMiha" target="_blank"><i class="fab fa-github icons"></i></a>  <a href="https://www.instagram.com/miha.nofak/" target="_blank"><i class="fab fa-instagram icons"></i></a>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/java.js') }}" type="module"></script>
+</body>
+</html>
+
